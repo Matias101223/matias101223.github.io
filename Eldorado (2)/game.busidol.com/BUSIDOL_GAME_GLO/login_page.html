@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from game.busidol.com/BUSIDOL_GAME_GLO/login_page.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Sep 2024 19:21:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0 maximum-scale=1 user-scalable=no">
+	<meta name="description" content="Find the golden city with your friends! ">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="expires" content="0" />
+
+	<title> H5 BUSIDOL GAME WORLD </title>
+
+	<!-- 부트스트랩 -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/Main.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/util_Function4web688e.js?20210628_1"></script>
+	<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script language="javascript" type="text/javascript" src="../ELDORADO_WEB/GoogleAnalytics/google_analytics.js"></script>
+
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f0606.txt?client=ca-pub-4567312917908978" crossorigin="anonymous"></script>
+	<script>window.adsbygoogle = window.adsbygoogle || []; var adBreak = adConfig = function(o) {adsbygoogle.push(o);} </script>
+
+	<style type='text/css'>
+
+		body
+		{
+			background-color: #111111;
+		}
+
+		table
+		{
+			position : relative;
+			top: -4px;
+			left: -4px;
+			font-size: 20px;
+			text-align: center;
+			/*background: yellow;  */
+			border-collapse:collapse;
+			width: 1280px;
+			height:720px;
+		}
+
+		input
+		{
+			font-size: 25px
+		}
+
+		img {
+			max-width: 100%;
+			/*height: 100%;*/
+			display: block;
+		}
+
+
+		.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+				position: relative;
+				min-height: 0;
+				padding: 0;
+			}
+		.bg_box {
+			background-color: #000000;
+			opacity: 0.5;
+			border-radius: 10px;
+
+		}
+		.form_box {
+			margin-top: 80px;
+
+		}
+		.font_color {
+
+			color: white;
+		}
+		.font_label {
+			font-size: larger;
+			font-weight: bolder;
+			text-shadow: 2px 2px 2px black;
+
+		}
+		.anchor_color {
+			/*color: #0F375B;*/
+			color: #ffffff;
+			text-shadow: 2px 2px 2px black;
+		}
+
+		.img-thumbnail_b {
+		  width: 17%;
+		  height: auto;
+		  padding: 4px;
+		  line-height: 1.42857143;
+		  background-color: #fff;
+		  border: 1px solid #ddd;
+		  border-radius: 4px;
+		  -webkit-transition: all .2s ease-in-out;
+		       -o-transition: all .2s ease-in-out;
+		          transition: all .2s ease-in-out;
+		}
+
+		button,
+		input
+		 {
+		  border: 1px black solid;
+		  color: black;
+
+		}
+
+	</style>
+	<script type="text/javascript">
+		var app_name = '';
+		var busidol_ip = '0';
+		var is_mobile = '0';
+		var debug = '0';
+
+
+		console.log("   js  debug:"+debug);
+		console.log("   js  app_name:"+app_name);
+		console.log("   js  busidol_ip:"+busidol_ip);
+		console.log("   js  is_mobile:"+is_mobile);
+
+		$(document).ready(function(){
+			var mode = 'GAME';
+
+			// var new_user = '';
+			// console.log("   js  new_user:"+new_user);
+
+			if (debug == 1)
+			{
+				var app_w = '100%';
+				// var app_w = 1280+'px';
+				var app_h = 720+'px';
+			}
+			else
+			{
+				var app_w = 1280+'px';
+				var app_h = 720+'px';
+			}
+
+
+
+			if (app_name == 'JUMP') {
+				app_w = 720+'px';
+				app_h = 1280+'px';
+				if (debug == 1) {
+					app_w = '100%';
+				}
+			}
+
+			$('#div_body').css({
+						left:'0px',
+						top:'0px',
+						width: app_w,
+						// 'max-width': '100%',
+						height: app_h,
+						overflow: 'hidden'
+			});
+			$('#div_body_bg').css({
+						left:'0px',
+						top:'0px',
+						width: app_w,
+						height: app_h,
+						overflow: 'hidden',
+						position:'absolute'
+			});
+			// chrom browser에서 iframe의 parent tag에서 height 값을 받아 오지 못해서 강제로 지정해줌
+			$('#div_body_form').css({
+						height: app_h
+			});
+
+			$('#AD_FIT_BG').css({
+						left:'0px',
+						top:'0px',
+						position:'absolute'
+			});
+
+
+
+			console.log(" mode:"+mode);
+			if (mode == 'GOOGLE') {
+				$('#AD_FIT_BG').hide();
+			} else {
+				$('#AD_FIT_BG').show();
+			}
+			// $('#ad-block-left').hide();
+			// $('#ad-block-right').hide();
+
+			util4web.init();
+
+			var scene_name = 'PC_GAME_EN';
+			send_analytics(scene_name);
+
+			$('#my_modal').modal('show');
+
+
+			if(util4web.is_mobile) {
+				$('#modal_p').attr('class','text-center');
+				$('#modal_p').css('margin-left',0);
+			}
+			/*
+			var frame = document.getElementById("app_f");
+			var gocoderFrameGo = frame.contentWindow || frame.contentDocument;
+			$("body").keydown(function(e){
+				// gocoderFrameGo.Main.keyDown(e);
+			});
+			*/
+
+
+		});
+/*
+		window.onerror = function (msg, url, lineNo, columnNo, error) {
+			var sceneName = '';
+
+			console.log(" msg:"+msg);
+			console.log(" url:"+url);
+			console.log(" lineNo:"+lineNo);
+			console.log(" columnNo:"+columnNo);
+			console.log(" error:"+error);
+
+		}
+
+		$.ajax({
+			url: 'https://display.ad.daum.net/',
+			dataType: 'json',
+			success: function( data ) {
+			 console.log( "Success:", data);
+			},
+			error: function( data ) {
+			 console.log( "Error:", data);
+			}
+		});
+*/
+	</script>
+
+</head>
+ <body>
+ 	<div id="AD_FIT" class="row">
+						<img id="AD_FIT_BG" src="image/intro_bg.jpg">
+						<div id="AD_BOX_LEFT" class="col-md-2 hidden-xs hidden-sm ">
+							<div id="ad-block-left">
+								<ins class="kakao_ad_area" style="display:none;" data-ad-unit    = "DAN-mIm9x8VVtEcpbvNc" data-ad-width   = "160" data-ad-height  = "600"></ins>
+								<script type="text/javascript" src="../../t1.daumcdn.net/kas/static/ba.min.js" async></script>
+							</div>
+						</div>
+						<div id="GAME_BOX" class="col-xs-9 col-sm-9 col-md-8">
+							<div id="div_body" class="col-xs-12" >
+								<div id="div_body_bg" class="col-xs-12 bg_box" ></div>
+								<div id="div_body_form"  class="col-xs-12 " >
+									<h1 class="font_color anchor_color"  style="text-align:center; margin-top:5%;" >H5 BUSIDOL GAME WORLD</h1>
+					<div style="margin:3% 0 0 2%; position:relative;">
+						<h4 class="font_color anchor_color"  style="text-align:center;margin-left: -11%;" >※ It needs a google account for playing the game.</h4>
+						<!-- 게임 리스트   padding: top, right, bottom, left-->
+						<div style="padding:2% 0% 0% 3%; position:relative;"><a href="https://game.busidol.com/auth/google/request_code.php"  style="padding-right:2%;  ">
+								<img src="image/app_icon/appicon_eldorado_eng.png"class="img-thumbnail img-thumbnail_b" position:relative;>
+							</a>
+							<a href="https://game.busidol.com/auth/google/request_code.php" style="padding-right:2%; ">
+								<img src="image/app_icon/appicon_omok_eng.png"  class="img-thumbnail img-thumbnail_b" >
+							</a><a href="https://game.busidol.com/auth/google/request_code.php" style="padding-right:2%; ">
+								<img src="image/app_icon/appicon_janggi_eng.png"  class="img-thumbnail img-thumbnail_b" >
+								</a><a href="https://game.busidol.com/auth/google/request_code.php"  style="padding-right:2%; ">
+									<img src="image/app_icon/appicon_slidingpuzzle_eng.png"  class="img-thumbnail img-thumbnail_b" >
+								</a><a href="https://game.busidol.com/auth/google/request_code.php" >
+									<img src="image/app_icon/appicon_jumpjump_eng.png"  class="img-thumbnail img-thumbnail_b" >
+								</a></div><!-- 카카오 TV --><!-- youtube --><div style="padding:5% 0% 0% 8%; position:relative;">
+							<a href="https://youtu.be/Iqlt3gwiTpk"  target="_blank"  style="padding-right:3%; " >
+								<div style="display: inline-block;">
+									<iframe title="엘도라도 디펜스 게임 소개 영상 - 삼성 스마트TV" class="img-thumbnail" src="https://www.youtube.com/embed//Iqlt3gwiTpk" allowfullscreen frameborder="0" scrolling="no" style="position:relative; pointer-events: none;"></iframe>
+								</div>
+							</a>
+							<a href="https://youtu.be/4hL0srVa2fY" target="_blank"  style="padding-right:3%; " >
+								<div style="display: inline-block;">
+									<iframe title="[스마트TV 게임-BUSIDOL]LG스마트TV-엘도라도 플레이영상" class="img-thumbnail" src="https://www.youtube.com/embed//4hL0srVa2fY" allowfullscreen frameborder="0" scrolling="no" style="position:relative; pointer-events: none;"></iframe>
+								</div>
+							</a>
+							<a href="https://youtu.be/5D9ZpZU-eZQ" target="_blank"  style="padding-right:3%; " >
+								<div style="display: inline-block;">
+									<iframe title="[스마트TV 게임-BUSIDOL] 3D Ocean - 플레이 영상 3D Ocean" class="img-thumbnail" src="https://www.youtube.com/embed//5D9ZpZU-eZQ" allowfullscreen frameborder="0" scrolling="no" style="position:relative; pointer-events: none;"></iframe>
+								</div>
+							</a>
+						</div><!-- 개인정보 및 서비스 이용 -->
+						<div style="padding:5% 0% 0% 0%; position:relative;">
+							<h4 class="font_color anchor_color" style=" text-align: left; left:28%;top:5%;position:absolute; ">
+								<a href="policy_eng.html" target="_blank" class="font_color anchor_color">Personal Information Policy</a></h4>
+							<h4 class="font_color anchor_color" style=" text-align: left; left:49%;top:5%;position:absolute; ">|</h4>
+							<h4 class="font_color anchor_color" style=" text-align: right; left:52%;top:5%;position:absolute; ">
+								<a href="service_eng.html" target="_blank" class="font_color anchor_color">Terms of Service</a></h4>
+						</div>
+					</div>
+					
+								</div>
+							</div>
+						</div> <!-- GAME_BOX -->
+						<div id="AD_BOX_RIGHT"  class="col-xs-3 col-sm-3 col-md-2">
+							<div id="ad-block-right">
+								<ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-DPxRnxGXMAG9QkO3" data-ad-width="160"
+									data-ad-height="600"></ins>
+								<script type="text/javascript" src="../../t1.daumcdn.net/kas/static/ba.min.js" async></script>
+							</div>
+
+						</div>
+						<img id="rotate_screen">	<!-- 위치 이동 -->
+					</div> </body>
+
+<!-- Mirrored from game.busidol.com/BUSIDOL_GAME_GLO/login_page.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Sep 2024 19:22:11 GMT -->
+</html>

@@ -1,0 +1,25 @@
+HTTrack3.49-1+htsswf+htsjava launched on Sat, 07 Sep 2024 14:15:35 at https://game.busidol.com/BUSIDOL_GAME_GLO/login_page.php?mode=GOOGLE&sign=f57e2df67b9a7f228c69b634d6f2bcea8eb5d847a94b3fe7557b5a24a72f78a20c20773223b19848cddb3f8f10511db4 +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://game.busidol.com/BUSIDOL_GAME_GLO/login_page.php?mode=GOOGLE&sign=f57e2df67b9a7f228c69b634d6f2bcea8eb5d847a94b3fe7557b5a24a72f78a20c20773223b19848cddb3f8f10511db4 -O1 "C:\My Web Sites\ElDorado Busidol (1)" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/fonts/glyphicons-halflings-regular.eot (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/bootstrap.min.css)
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/fonts/glyphicons-halflings-regular.eot? (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/bootstrap.min.css)
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/fonts/glyphicons-halflings-regular.woff2 (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/bootstrap.min.css)
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/fonts/glyphicons-halflings-regular.woff (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/bootstrap.min.css)
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/fonts/glyphicons-halflings-regular.ttf (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/bootstrap.min.css)
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/fonts/glyphicons-halflings-regular.svg (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/bootstrap.min.css)
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/image/facebook/title_prebetatest.png (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/Main.css)
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/image/ui/0_common/co_leftbt.png (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/Main.css)
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/image/ui/2_selectmap/sm_returnIcon.png (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/Main.css)
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/image/ui/0_common/co_leftbt_focus.png (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/Main.css)
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/image/ui/0_common/co_rightbt_focus.png (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/Main.css)
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/image/ui/0_common/co_rightbt.png (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/Main.css)
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/image/ui/1_mainmenu/mm_startIcon.png (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/Main.css)
+14:16:19	Error: 	"Not Found" (404) at link https://game.busidol.com/BUSIDOL_GAME_GLO/image/ui/1_mainmenu/mm_mainbt.png (from https://game.busidol.com/BUSIDOL_GAME_GLO/css/Main.css)
+
+HTTrack Website Copier/3.49-1 mirror complete in 44 seconds : 24 links scanned, 9 files written (768500 bytes overall) [753708 bytes received at 17129 bytes/sec], 35452 bytes transferred using HTTP compression in 1 files, ratio 26%
+(14 errors, 0 warnings, 0 messages)
